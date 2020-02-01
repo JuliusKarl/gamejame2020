@@ -1,5 +1,28 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Current Balance
+
+**Health** Starts at 15. Win by getting your own tower to 30. Can't go lower than 0.
+
+**Order of play** Start with 5 cards. Play one card each turn, then draw
+
+## Card Ideas
+
+_italicised == shelved for now_
+
+- Randomise towers among players
+- Set all towers to the lowest on the board
+- Trade towers with another player.
+- Undo the effect of the last turn
+- Discard your entire hand and inc/dec any tower by that much.
+- _Draw 2 cards_
+- _Play two cards this turn, at the cost of skipping your next turn_
+- +1, unless +7 or more has been played since your last turn, in which case it's +7
+- Reset all towers to 15
+- _Skip this turn. For the rest of the game, all your decs will be one stronger._
+- Start as +1. Increase by one for every round.
+- _Peek at the top 3 cards on the deck._
+
 ## Available Scripts
 
 In the project directory, you can run:
