@@ -11,3 +11,8 @@
     flex-direction: row;
     justify-content: space-evenly;
 }
+
+.tower-img {
+    width: 100px;
+    height: 600px;
+}
