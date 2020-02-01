@@ -1,4 +1,4 @@
-import { cardType } from '../../config/cardType';
+import { cardType } from '../config/cardType';
 
 let displayCallback;
 
@@ -12,7 +12,7 @@ function cardPlayedCallback(e) {
   this.callback(e);
 }
 
-const state = {
+const player_state = {
   abc123: {
     tower: {
       health: 15,
@@ -38,5 +38,5 @@ const state = {
 };
 
 export {
-  state, setCardPlayedDisplayCallback,
+  player_state, setCardPlayedDisplayCallback
 };
