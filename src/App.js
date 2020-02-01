@@ -6,7 +6,9 @@ import Field from './field/Field';
 function App() {
   return (
     <div className="App">
-      <Field></Field>
+      <div className="background">
+      </div>
+      <Field className="playing-field"></Field>
     </div>
   );
 }
