@@ -2,3 +2,12 @@
     margin: 0;
     padding: 0;
 }
+
+.playing-field {
+    height: 100px;
+    background: #669f1c;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
