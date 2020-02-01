@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
-import './App.css';
-import Field from './field/Field';
+import './Controller.css';
 
 class Controller extends Component {
   constructor(props) {
@@ -15,26 +14,25 @@ class Controller extends Component {
     script.async = true;
     this.div.appendChild(script);
   }
-
+  
   render() {
     return (
         <div>
             <div className="Controller" ref={el => (this.div = el)}></div>
                 <div className="background"></div>
                 <div class="col">
-                    <div class="row"><div class="card" ontouchstart="window.app.sendMessageToScreen('interact')"></div></div>
-                    <div class="row"><div class="card" ontouchstart="window.app.sendMessageToScreen('interact')"></div></div>
-                    <div class="row"><div class="card" ontouchstart="window.app.sendMessageToScreen('interact')"></div></div>
+                    <div class="row"><Card class="card" ontouchstart="window.app.sendMessageToScreen('interact')"></Card></div>
+                    <div class="row"><Card class="card" ontouchstart="window.app.sendMessageToScreen('interact')"></Card></div>
+                    <div class="row"><Card class="card" ontouchstart="window.app.sendMessageToScreen('interact')"></Card></div>
                 </div>
-
                 <div class="col">
-                    <div class="row"><div class="card" ontouchstart="window.app.sendMessageToScreen('interact')"></div></div>
-                    <div class="row"><div class="card" ontouchstart="window.app.sendMessageToScreen('interact')"></div></div>
-                    <div class="row"><div class="card" ontouchstart="window.app.sendMessageToScreen('interact')"></div></div>
+                    <div class="row"><Card class="card" ontouchstart="window.app.sendMessageToScreen('interact')"></Card></div>
+                    <div class="row"><Card class="card" ontouchstart="window.app.sendMessageToScreen('interact')"></Card></div>
+                    <div class="row"><Card class="card" ontouchstart="window.app.sendMessageToScreen('interact')"></Card></div>
                 </div>
             </div>
     );
   }
 }
 
-export default App;
+export default Controller;

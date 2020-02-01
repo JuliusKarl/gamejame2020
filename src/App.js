@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Field from './field/Field';
+import {setupConsole} from './airConsole.js'; 
 
 class App extends Component {
   constructor(props) {
@@ -10,10 +11,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    const script = document.createElement("script");
-    script.src = "https://www.airconsole.com/api/airconsole-1.7.0.js";
-    script.async = true;
-    this.div.appendChild(script);
+    setupConsole();
   }
 
   render() {
