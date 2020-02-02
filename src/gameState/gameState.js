@@ -16,13 +16,13 @@ const player_state = {
   abc123: {
     isHuman: true,
     tower: {
-      health: 15,
+      health: 30,
     },
     hand: [cardType.TRADE_TOWER,
       cardType.SET_ALL_TO_LOWEST,
       cardType.UNDO_LAST,
       cardType.UNDO_LAST,
-      cardType.FOUR],
+      cardType.PLUS_FOUR],
   },
 
   def654: {
@@ -31,9 +31,9 @@ const player_state = {
       health: 29,
     },
     hand: [cardType.RESET_TO_15,
-      cardType.FIVE,
+      cardType.PLUS_FIVE,
       cardType.ONE_PLUS_ROUND_COUNT,
-      cardType.ONE,
+      cardType.PLUS_ONE,
       cardType.UNDO_LAST],
   },
 

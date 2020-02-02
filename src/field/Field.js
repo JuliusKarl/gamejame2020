@@ -6,11 +6,27 @@ class Field extends Component {
 
     constructor(props) {
         super(props);
-        let cards = [20];
     }
+
+    cardEffect = (c, t) => {
+        return null;
+    }
+
     render() {
         return (
             <div className="fixed-field">
+                <ul className="cards">
+                    {Object.values(player_state.abc123.hand).map(function(card, index){
+                        console.log(card);
+                        return <div key={index}><img 
+                            className="card" 
+                            onClick={cardEffect(card_type, target_type)}
+                            id={'Card' + index} 
+                            src={require('../assets/Cards/' + card.url + '.png')}/>
+                        </div>
+                    })}
+                </ul>
+                <div><img className="rival_card" src={require('../assets/Cards/back.png')}/></div>
                 <ul className="playing-field">
                     {Object.values(player_state).map(function(player, index){
                         return <div key={index}><img 
@@ -19,14 +35,6 @@ class Field extends Component {
                             src={require('../assets/' + player.tower.health + '.png')}/>
                         </div>
                     })}
-                </ul>
-                <ul className="cards">
-                    <div><img className="card" src={require('../assets/Cards/' + (Math.round(Math.random() * 20)) + '.png')}/></div>
-                    <div><img className="card" src={require('../assets/Cards/' + (Math.round(Math.random() * 20)) + '.png')}/></div>
-                    <div><img className="card" src={require('../assets/Cards/' + (Math.round(Math.random() * 20)) + '.png')}/></div>
-                    <div><img className="card" src={require('../assets/Cards/' + (Math.round(Math.random() * 20)) + '.png')}/></div>
-                    <div><img className="card" src={require('../assets/Cards/' + (Math.round(Math.random() * 20)) + '.png')}/></div>
-                    <div><img className="card" src={require('../assets/Cards/' + (Math.round(Math.random() * 20)) + '.png')}/></div>
                 </ul>
             </div>
         );

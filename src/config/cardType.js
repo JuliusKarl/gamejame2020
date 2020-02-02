@@ -8,74 +8,74 @@ const targetType = {
 export const cardType = {
     RANDOMISE_TOWERS: {
         targetType: targetType.NONE,
-        url: "./assets/Cards/17.png"
+        url: "17"
     },
     SET_ALL_TO_LOWEST: {
         targetType: targetType.NONE,
-        url: "./assets/Cards/15.png"
+        url: "15"
     },
     TRADE_TOWER: {
         targetType: targetType.OTHER,
-        url: "./assets/Cards/19.png"
+        url: '19'
     },
     UNDO_LAST: {
         targetType: targetType.NONE,
-        url: "./assets/Cards/20.png"
+        url: "20"
     },
 
     ONE_OR_SEVEN: {
         targetType: targetType.OTHER,
-        url: "./assets/Cards/0.png"
+        url: "0"
     },
     RESET_TO_15: {
         targetType: targetType.NONE,
-        url: "./assets/Cards/16.png"
+        url: "16"
     },
     PEEK_THE_DECK: {
         targetType: targetType.NONE,
-        url: "./assets/Cards/9.png"
+        url: "9"
     },
 
     // Boring + or minus one cards
     PLUS_ONE: {
         targetType: targetType.ANY,
-        url: "./assets/Cards/1.png"
+        url: "1"
     },
     PLUS_TWO: {
         targetType: targetType.ANY,
-        url: "./assets/Cards/2.png"
+        url: "2"
     },
     PLUS_THREE: {
         targetType: targetType.ANY,
-        url: "./assets/Cards/3.png"
+        url: "3"
     },
     PLUS_FOUR: {
         targetType: targetType.ANY,
-        url: "./assets/Cards/4.png"
+        url: "4"
     },
     PLUS_FIVE: {
         targetType: targetType.ANY,
-        url: "./assets/Cards/5.png"
+        url: "5"
     },
 
     MINUS_ONE: {
         targetType: targetType.ANY,
-        url: "./assets/Cards/6.png"
+        url: "6"
     },
     MINUS_TWO: {
         targetType: targetType.ANY,
-        url: "./assets/Cards/7.png"
+        url: "7"
     },
     MINUS_THREE: {
         targetType: targetType.ANY,
-        url: "./assets/Cards/8.png"
+        url: "8"
     },
     MINUS_FOUR: {
         targetType: targetType.ANY,
-        url: "./assets/Cards/10.png"
+        url: "10"
     },
     MINUS_FIVE: {
         targetType: targetType.ANY,
-        url: "./assets/Cards/11.png"
+        url: "11"
     }
 }
