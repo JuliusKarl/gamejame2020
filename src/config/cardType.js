@@ -7,50 +7,75 @@ const targetType = {
 
 export const cardType = {
     RANDOMISE_TOWERS: {
-        targetType: targetType.NONE
+        targetType: targetType.NONE,
+        url: "./assets/Cards/17.png"
     },
     SET_ALL_TO_LOWEST: {
-        targetType: targetType.NONE
+        targetType: targetType.NONE,
+        url: "./assets/Cards/15.png"
     },
     TRADE_TOWER: {
-        targetType: targetType.OTHER
+        targetType: targetType.OTHER,
+        url: "./assets/Cards/19.png"
     },
     UNDO_LAST: {
-        targetType: targetType.NONE
+        targetType: targetType.NONE,
+        url: "./assets/Cards/20.png"
     },
 
-    // Too difficult for now, get to later
-    // DISCARD_AND_DECREASE,
-    // DRAW_2,
-    // PLAY_2_THEN_SKIP,
     ONE_OR_SEVEN: {
-        targetType: targetType.OTHER
+        targetType: targetType.OTHER,
+        url: "./assets/Cards/0.png"
     },
     RESET_TO_15: {
-        targetType: targetType.NONE
-    },
-    ONE_PLUS_ROUND_COUNT: {
-        targetType: targetType.ANY
+        targetType: targetType.NONE,
+        url: "./assets/Cards/16.png"
     },
     PEEK_THE_DECK: {
-        targetType: targetType.NONE
+        targetType: targetType.NONE,
+        url: "./assets/Cards/9.png"
     },
 
     // Boring + or minus one cards
-    ONE: {
-        targetType: targetType.ANY
+    PLUS_ONE: {
+        targetType: targetType.ANY,
+        url: "./assets/Cards/1.png"
     },
-    TWO: {
-        targetType: targetType.ANY
+    PLUS_TWO: {
+        targetType: targetType.ANY,
+        url: "./assets/Cards/2.png"
     },
-    THREE: {
-        targetType: targetType.ANY
+    PLUS_THREE: {
+        targetType: targetType.ANY,
+        url: "./assets/Cards/3.png"
     },
-    FOUR: {
-        targetType: targetType.ANY
+    PLUS_FOUR: {
+        targetType: targetType.ANY,
+        url: "./assets/Cards/4.png"
     },
-    FIVE: {
-        targetType: targetType.ANY
-    }
+    PLUS_FIVE: {
+        targetType: targetType.ANY,
+        url: "./assets/Cards/5.png"
+    },
 
+    MINUS_ONE: {
+        targetType: targetType.ANY,
+        url: "./assets/Cards/6.png"
+    },
+    MINUS_TWO: {
+        targetType: targetType.ANY,
+        url: "./assets/Cards/7.png"
+    },
+    MINUS_THREE: {
+        targetType: targetType.ANY,
+        url: "./assets/Cards/8.png"
+    },
+    MINUS_FOUR: {
+        targetType: targetType.ANY,
+        url: "./assets/Cards/10.png"
+    },
+    MINUS_FIVE: {
+        targetType: targetType.ANY,
+        url: "./assets/Cards/11.png"
+    }
 }
