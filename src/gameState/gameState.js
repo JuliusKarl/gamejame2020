@@ -14,6 +14,7 @@ function cardPlayedCallback(e) {
 
 const player_state = {
   abc123: {
+    isHuman: true,
     tower: {
       health: 15,
     },
@@ -25,6 +26,7 @@ const player_state = {
   },
 
   def654: {
+    isHuman: false,
     tower: {
       health: 29,
     },

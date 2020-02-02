@@ -5,13 +5,8 @@ import { player_state, setCardPlayedDisplayCallback } from '../gameState/gameSta
 class Field extends Component {
 
     constructor(props) {
-        super(props)
-        this.state = {
-            tower1: 0,
-            tower2: 0,
-            tower3: 0,
-            tower4: 0,
-        }
+        super(props);
+        let cards = [20];
     }
     render() {
         return (
@@ -24,6 +19,14 @@ class Field extends Component {
                             src={require('../assets/' + player.tower.health + '.png')}/>
                         </div>
                     })}
+                </ul>
+                <ul className="cards">
+                    <div><img className="card" src={require('../assets/Cards/' + (Math.round(Math.random() * 20)) + '.png')}/></div>
+                    <div><img className="card" src={require('../assets/Cards/' + (Math.round(Math.random() * 20)) + '.png')}/></div>
+                    <div><img className="card" src={require('../assets/Cards/' + (Math.round(Math.random() * 20)) + '.png')}/></div>
+                    <div><img className="card" src={require('../assets/Cards/' + (Math.round(Math.random() * 20)) + '.png')}/></div>
+                    <div><img className="card" src={require('../assets/Cards/' + (Math.round(Math.random() * 20)) + '.png')}/></div>
+                    <div><img className="card" src={require('../assets/Cards/' + (Math.round(Math.random() * 20)) + '.png')}/></div>
                 </ul>
             </div>
         );
