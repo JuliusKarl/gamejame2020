@@ -1,9 +1,9 @@
 /* eslint-disable no-undef */
 const targetType = {
-  SELF, // increase own tower
-  OTHER, // decrease someone elses
-  ANY, // increase self OR decrease other (choose one when played)
-  NONE, // no target
+  SELF: 0, // increase own tower
+  OTHER: 1, // decrease someone elses
+  ANY: 2, // increase self OR decrease other (choose one when played)
+  NONE: 3, // no target
 };
 
 const cardType = {
